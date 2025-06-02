@@ -1,8 +1,14 @@
-namespace EventosUCB.Entidades;
-
-public class Usuario
+namespace EventosUCB.Domain.Entities
 {
-    public int id { get; set; }
-    public string nombre { get; set; }
-    public int CI { get; set; }
+    public class Usuario
+    {
+        public string Nombre { get; private set; }
+        public string CI { get; private set; }
+
+        public Usuario(string nombre, string ci)
+        {
+            Nombre = nombre;
+            CI = ci;
+        }
+    }
 }

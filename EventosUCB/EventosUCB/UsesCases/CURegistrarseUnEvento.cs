@@ -1,6 +1,14 @@
-namespace EventosUCB.UsesCases;
+using System;
+using EventosUCB.Domain.Entities;
 
-public class CURegistrarseUnEvento
+
+namespace EventosUCB.Application.UseCases
 {
-    
+    public class RegistrarseEnEventoUseCase
+    {
+        private readonly IEventoRepository _eventoRepository;
+        private readonly IUsuarioRepository _usuarioRepository;
+
+    }
+}
 }
