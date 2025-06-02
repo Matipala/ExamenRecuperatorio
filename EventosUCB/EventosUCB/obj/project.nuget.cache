@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iFWtN/N43iU=",
+  "dgSpecHash": "2qFPFHrvW5o=",
   "success": true,
-  "projectFilePath": "/Users/josue/Documents/AplicacionesWeb1/EventosUCB/EventosUCB/EventosUCB.csproj",
+  "projectFilePath": "/Users/josue/Documents/GitHub/ExamenRecuperatorio/EventosUCB/EventosUCB/EventosUCB.csproj",
   "expectedPackageFiles": [
     "/Users/josue/.nuget/packages/microsoft.aspnetcore.openapi/8.0.6/microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",
     "/Users/josue/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

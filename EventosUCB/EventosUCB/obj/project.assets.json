@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/josue/Documents/AplicacionesWeb1/EventosUCB/EventosUCB/EventosUCB.csproj",
+      "projectUniqueName": "/Users/josue/Documents/GitHub/ExamenRecuperatorio/EventosUCB/EventosUCB/EventosUCB.csproj",
       "projectName": "EventosUCB",
-      "projectPath": "/Users/josue/Documents/AplicacionesWeb1/EventosUCB/EventosUCB/EventosUCB.csproj",
+      "projectPath": "/Users/josue/Documents/GitHub/ExamenRecuperatorio/EventosUCB/EventosUCB/EventosUCB.csproj",
       "packagesPath": "/Users/josue/.nuget/packages/",
-      "outputPath": "/Users/josue/Documents/AplicacionesWeb1/EventosUCB/EventosUCB/obj/",
+      "outputPath": "/Users/josue/Documents/GitHub/ExamenRecuperatorio/EventosUCB/EventosUCB/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/josue/.nuget/NuGet/NuGet.Config"
