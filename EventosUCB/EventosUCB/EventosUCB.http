@@ -1,0 +1,6 @@
+@EventosUCB_HostAddress = http://localhost:5167
+
+GET {{EventosUCB_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
