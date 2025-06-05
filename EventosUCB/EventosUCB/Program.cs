@@ -14,6 +14,9 @@ builder.Services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddSingleton<IInscripcionRepository, InscripcionRepository>();
 builder.Services.AddScoped<IRegistrarUsuarioUseCase, RegistrarUsuarioUseCase>();
 builder.Services.AddScoped<IVerListaEventosUseCase, VerListaEventosUseCase>();
+builder.Services.AddScoped<IVerEventosInscritosUseCase, VerEventosInscritosUseCase>();
+
+
 
 
 var app = builder.Build();

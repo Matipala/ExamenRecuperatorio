@@ -69,7 +69,16 @@ namespace EventosUCB.Application
             Usuario usuario;
             if (usuarioExistente == null)
             {
-                usuario = new Usuario(Guid.NewGuid().ToString(), request.Nombre, request.CI);
+                if (string.IsNullOrEmpty(request.UsuarioId))
+                {
+                    return new RegistrarUsuarioResponse
+                    {
+                        Success = false,
+                        Message = "Ingrese un id de usuario."
+                    };
+                }
+
+                usuario = new Usuario(request.UsuarioId, request.Nombre, request.CI);
                 await _usuarioRepository.SaveAsync(usuario);
             }
             else
@@ -97,6 +106,8 @@ namespace EventosUCB.Application
         public string EventoId { get; set; }
         public string Nombre { get; set; }
         public string CI { get; set; }
+
+        public string UsuarioId { get; set; }
     }
 
     public class RegistrarUsuarioResponse

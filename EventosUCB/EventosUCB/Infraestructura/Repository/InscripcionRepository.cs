@@ -14,5 +14,14 @@ namespace EventosUCB.Infraestructura.Repository
             _inscripciones.Add(inscripcion);
             return Task.CompletedTask;
         }
+
+
+        public Task<List<Inscripcion>> GetByUsuarioIdAsync(string usuarioId)
+        {
+            var resultado = _inscripciones
+                .Where(i => i.UsuarioId == usuarioId)
+                .ToList();
+            return Task.FromResult(resultado);
+        }
     }
 }
