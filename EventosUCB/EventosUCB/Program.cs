@@ -1,11 +1,24 @@
+using EventosUCB.Application;
+using EventosUCB.Infraestructura.Repository;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+builder.Services.AddSingleton<IEventoRepository, EventoRepository>();
+builder.Services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddSingleton<IInscripcionRepository, InscripcionRepository>();
+builder.Services.AddScoped<IRegistrarUsuarioUseCase, RegistrarUsuarioUseCase>();
 
 var app = builder.Build();
+app.UseRouting();
+app.UseAuthorization();
+app.MapControllers();
+app.Run();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
