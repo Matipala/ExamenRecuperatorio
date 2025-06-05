@@ -28,5 +28,11 @@ namespace EventosUCB.Infraestructura.Repository
         {
             return Task.CompletedTask;
         }
+
+        public Task<List<Evento>> GetAllAsync()
+        {
+            return Task.FromResult(_eventos.ToList());
+        }
+
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventosUCB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d88b190e0457bd8968800e622001a88e6da8dae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65658871e91a2df4c89a2f4707b9af085faab00b")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventosUCB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventosUCB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

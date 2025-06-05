@@ -9,5 +9,6 @@ namespace EventosUCB.Infraestructura.Repository
     {
         Task<Evento> GetByIdAsync(string id);
         Task SaveAsync(Evento evento);
+        Task<List<Evento>> GetAllAsync();
     }
 }

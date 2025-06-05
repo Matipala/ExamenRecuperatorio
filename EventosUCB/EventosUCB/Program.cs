@@ -13,6 +13,8 @@ builder.Services.AddSingleton<IEventoRepository, EventoRepository>();
 builder.Services.AddSingleton<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddSingleton<IInscripcionRepository, InscripcionRepository>();
 builder.Services.AddScoped<IRegistrarUsuarioUseCase, RegistrarUsuarioUseCase>();
+builder.Services.AddScoped<IVerListaEventosUseCase, VerListaEventosUseCase>();
+
 
 var app = builder.Build();
 app.UseRouting();
